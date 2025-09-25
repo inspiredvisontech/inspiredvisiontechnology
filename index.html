@@ -63,39 +63,102 @@
     <h2>About Us</h2>
     <p>We focus on practical, project-based training to help learners land jobs in IT.</p>
   </section>
-<section id="placements" style="padding:40px 16px; text-align:center;">
-  <h2 style="color:#d4af37; margin-bottom:20px;">Recently Placed Students</h2>
-  <div style="display:flex; flex-wrap:wrap; gap:16px; justify-content:center;">
+<section class="students">
+  <h2>Recently Placed Students</h2>
+  <div class="student-container">
 
-    <div style="background:#111; padding:16px; border-radius:12px; width:240px; box-shadow:0 2px 8px rgba(212,175,55,.3); text-align:center;">
-      <img src="sachin.jpg" alt="Sachin Kumar" style="width:100%; border-radius:12px; margin-bottom:8px;">
-      <h3 style="color:#d4af37;">Sachin Kumar</h3>
-      <p>Network Engineer</p>
-    </div>
-
-    <div style="background:#111; padding:16px; border-radius:12px; width:240px; box-shadow:0 2px 8px rgba(212,175,55,.3); text-align:center;">
-      <img src="rohit.jpg" alt="Rohit" style="width:100%; border-radius:12px; margin-bottom:8px;">
-      <h3 style="color:#d4af37;">Rohit</h3>
-      <p>Cloud Engineer</p>
-    </div>
-
-    <div style="background:#111; padding:16px; border-radius:12px; width:240px; box-shadow:0 2px 8px rgba(212,175,55,.3); text-align:center;">
-      <img src="ajay.jpg" alt="Ajay Baghel" style="width:100%; border-radius:12px; margin-bottom:8px;">
-      <h3 style="color:#d4af37;">Ajay Baghel</h3>
+    <div class="student-card">
+      <img src="images/ajay.jpg" alt="Ajay">
+      <h3>Ajay</h3>
       <p>Linux System Admin</p>
+      <q>"Every challenge is a chance to grow stronger."</q>
     </div>
 
-    <div style="background:#111; padding:16px; border-radius:12px; width:240px; box-shadow:0 2px 8px rgba(212,175,55,.3); text-align:center;">
-      <img src="sunil.jpg" alt="Sunil Chaudhary" style="width:100%; border-radius:12px; margin-bottom:8px;">
-      <h3 style="color:#d4af37;">Sunil Chaudhary</h3>
+    <div class="student-card">
+      <img src="images/rohit.jpg" alt="Rohit">
+      <h3>Rohit</h3>
+      <p>Cloud Engineer</p>
+      <q>"Innovation starts with a single step of learning."</q>
+    </div>
+
+    <div class="student-card">
+      <img src="images/sachin.jpg" alt="Sachin">
+      <h3>Sachin</h3>
+      <p>Network Engineer</p>
+      <q>"Connections matter – in networks and in life."</q>
+    </div>
+
+    <div class="student-card">
+      <img src="images/harveer.jpg" alt="Harveer">
+      <h3>Harveer</h3>
+      <p>Network Admin</p>
+      <q>"Discipline and focus create lasting success."</q>
+    </div>
+
+    <div class="student-card">
+      <img src="images/sunil.jpg" alt="Sunil">
+      <h3>Sunil</h3>
       <p>Linux Admin</p>
-      <blockquote style="font-style:italic; color:#ccc; margin-top:8px;">
-        "Linux is not just a skill, it’s a power that builds your career foundation."
-      </blockquote>
+      <q>"Linux is not just a skill, it’s a foundation for growth."</q>
     </div>
 
   </div>
 </section>
+
+<style>
+.students {
+  text-align: center;
+  padding: 40px;
+  background: #000;
+  color: #FFD700;
+}
+
+.student-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.student-card {
+  background: #111;
+  border-radius: 10px;
+  width: 220px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+  transition: transform 0.3s;
+}
+
+.student-card:hover {
+  transform: scale(1.05);
+}
+
+.student-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.student-card h3 {
+  font-size: 18px;
+  color: #FFD700;
+}
+
+.student-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+.student-card q {
+  font-size: 12px;
+  color: #ccc;
+  display: block;
+  margin-top: 10px;
+}
+</style>
 
   <section id="reviews">
     <h2>Student Reviews</h2>
